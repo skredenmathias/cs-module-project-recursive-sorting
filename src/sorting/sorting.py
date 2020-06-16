@@ -1,9 +1,14 @@
 # TO-DO: complete the helper function below to merge 2 sorted arrays
 def merge(arrA, arrB):
+    # Create an array merged_arr of size arrA + arrB
     elements = len(arrA) + len(arrB)
     merged_arr = [0] * elements
 
-    # Your code here
+    # Copy all n1 elements of arrA to merged_arr
+    for elem in range(len(arrA)):
+        merged_arr[elem] = arr[elem]
+
+    # Traverse arrB and one by one insert elements (like insertion sort) of merged_arr to arrA
 
 
     return merged_arr
